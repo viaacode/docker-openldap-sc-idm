@@ -5,14 +5,14 @@ olcAttributeTypes: ( 1.3.6.1.4.1.50458.2.2017.07.29.1
         NAME 'x-be-viaa-externalId'
         DESC 'External unique identifier, e.g. unique ID in CRM.'
         EQUALITY caseIgnoreIA5Match
-        SYNTAX 1.3.6.1.4.1.1466.115.121.1.26 
+        SYNTAX 1.3.6.1.4.1.1466.115.121.1.26
         SINGLE-VALUE)
 olcAttributeTypes: ( 1.3.6.1.4.1.50458.2.2017.07.29.2
         NAME 'x-be-viaa-sector'
         DESC 'Sector in which the entry is active, e.g. broadcast, government, ...'
         SUBSTR caseIgnoreSubstringsMatch
         EQUALITY caseIgnoreMatch
-        SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+        SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
         SINGLE-VALUE)
 olcAttributeTypes: ( 1.3.6.1.4.1.50458.2.2017.07.29.3
         NAME 'x-be-viaa-eduCourseName'
@@ -42,7 +42,7 @@ olcAttributeTypes: (  1.3.6.1.4.1.50458.2.2017.07.29.7
         DESC 'Timestamp starting from which account expires.'
         EQUALITY generalizedTimeMatch
         ORDERING generalizedTimeOrderingMatch
-        SYNTAX 1.3.6.1.4.1.1466.115.121.1.24 
+        SYNTAX 1.3.6.1.4.1.1466.115.121.1.24
         SINGLE-VALUE )
 olcObjectClasses: ( 1.3.6.1.4.1.50458.1.2017.07.29.1
         NAME 'x-be-viaa-person'
@@ -62,4 +62,3 @@ olcObjectClasses: ( 1.3.6.1.4.1.50458.1.2017.07.29.4
         DESC 'Organisation active in the wider field of the educational sector, such as a school, university, but also an educational publisher.'
         AUXILIARY
         MAY ( x-be-viaa-eduTypeName $ x-be-viaa-eduTypeCode ) )
-

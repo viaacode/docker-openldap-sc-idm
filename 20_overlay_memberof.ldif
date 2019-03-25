@@ -5,4 +5,3 @@ objectClass: olcMemberOf
 olcOverlay: memberof
 olcMemberOfGroupOC: groupOfUniqueNames
 olcMemberOfMemberAD: uniqueMember
-
