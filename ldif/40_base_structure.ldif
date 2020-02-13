@@ -1,0 +1,36 @@
+version: 1
+
+dn: dc=hetarchief,dc=be
+objectClass: dcObject
+objectClass: domain
+dc: hetarchief
+
+dn: ou=people,dc=hetarchief,dc=be
+objectClass: top
+objectClass: organizationalUnit
+ou: people
+description: Users
+
+dn: ou=apps,dc=hetarchief,dc=be
+objectClass: top
+objectClass: organizationalUnit
+ou: apps
+description: Applications
+
+dn: ou=services,dc=hetarchief,dc=be
+objectClass: organizationalUnit
+objectClass: top
+ou: services
+description: Applications
+
+dn: ou=groups,dc=hetarchief,dc=be
+objectClass: top
+objectClass: organizationalUnit
+ou: groups
+description: User groups
+
+dn: ou=orgs,dc=hetarchief,dc=be
+objectClass: top
+objectClass: organizationalUnit
+ou: orgs
+description: Organisations
