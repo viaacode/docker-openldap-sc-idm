@@ -32,6 +32,8 @@ COPY configure_ldap_access.sh /usr/local/bin/
 COPY backend.ldif /
 COPY config.ldif /
 ADD ldif /docker-entrypoint-init/
+RUN chmod +x /usr/local/bin/configure_ldap_access.sh
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
 # Arange access so that the container can run non-privileged
 # Enable passwordless access via shared memory for SlapdUserId
